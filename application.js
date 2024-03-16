@@ -1,6 +1,6 @@
 //Anas Abushaikha
 //ID 101285962
-//Date: Monday March 18th
+//Date: Monday March 18th 2024
 
 //imports pool class from pg library
 const { Pool } = require('pg');
