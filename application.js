@@ -8,6 +8,16 @@ const pool = new Pool({
     port: 5432,
 });
 
+pool.connect((err, client, release) => {
+    if (err) {
+      console.error('Error connecting to the database:', err.stack);
+      process.exit(1);
+    } else {
+      console.log('Connected to the database successfully!');
+      release();
+    }
+  });
+
 const getAllStudents = async () => {
     try {
         const res = await pool.query('SELECT * FROM students');
