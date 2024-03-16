@@ -1,1 +1,1 @@
-# a3-3005
+To compile/run : Open terminal and execute command node application.js
